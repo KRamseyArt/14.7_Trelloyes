@@ -18,6 +18,12 @@ export default function List(props) {
             />
           )
         })}
+        <button
+          type="button"
+          className="List-add-button"
+        >
+          + Add Random Card
+        </button>
       </div>
     </section>
   )
