@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component renders the UI as expected 1`] = `
+<div
+  className="Card"
+>
+  <button
+    type="button"
+  >
+    Delete
+  </button>
+  <h3>
+    Card
+  </h3>
+  <p>
+    something
+  </p>
+</div>
+`;
+
+exports[`Card component renders the UI without title and content 1`] = `
+<div
+  className="Card"
+>
+  <button
+    type="button"
+  >
+    Delete
+  </button>
+  <h3 />
+  <p />
+</div>
+`;

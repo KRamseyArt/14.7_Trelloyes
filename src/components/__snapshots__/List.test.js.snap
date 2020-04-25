@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component renders the UI as expected 1`] = `
+<section
+  className="List"
+>
+  <header>
+    List
+  </header>
+  <div
+    className="List-cards"
+  >
+    empty
+    <button
+      className="List-add-button"
+      type="button"
+    >
+      + Add Random Card
+    </button>
+  </div>
+</section>
+`;
+
+exports[`List component renders the UI as expected 2`] = `
+<section
+  className="List"
+>
+  <header>
+    List
+  </header>
+  <div
+    className="List-cards"
+  >
+    <div
+      className="Card"
+    >
+      <button
+        type="button"
+      >
+        Delete
+      </button>
+      <h3>
+        title1
+      </h3>
+      <p>
+        content1
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        type="button"
+      >
+        Delete
+      </button>
+      <h3>
+        title2
+      </h3>
+      <p>
+        content2
+      </p>
+    </div>
+    <button
+      className="List-add-button"
+      type="button"
+    >
+      + Add Random Card
+    </button>
+  </div>
+</section>
+`;
+
+exports[`List component renders the UI without title and content 1`] = `
+<section
+  className="List"
+>
+  <header />
+  <div
+    className="List-cards"
+  >
+    empty
+    <button
+      className="List-add-button"
+      type="button"
+    >
+      + Add Random Card
+    </button>
+  </div>
+</section>
+`;

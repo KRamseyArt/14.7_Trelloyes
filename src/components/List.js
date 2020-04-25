@@ -9,10 +9,10 @@ export default function List(props) {
         {props.header}
       </header>
       <div className="List-cards">
-        {props.cards.map(card => {
+        {props.cards.length === 0 ? "empty" : props.cards.map((card, i) => {
           return (
             <Card
-              key={card.id}
+              key={i}
               title={card.title}
               content={card.content}
             />
@@ -27,4 +27,8 @@ export default function List(props) {
       </div>
     </section>
   )
+}
+
+List.defaultProps = {
+  cards:[]
 }
