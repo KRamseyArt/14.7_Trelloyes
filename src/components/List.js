@@ -13,6 +13,8 @@ export default function List(props) {
           return (
             <Card
               key={i}
+              id={card.id}
+              handleDeleteCard={props.handleDeleteCard}
               title={card.title}
               content={card.content}
             />
@@ -20,6 +22,8 @@ export default function List(props) {
         })}
         <button
           type="button"
+          onClick={
+            () => props.handleAddRandomCard(props.id)}
           className="List-add-button"
         >
           + Add Random Card
